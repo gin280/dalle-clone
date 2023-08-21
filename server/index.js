@@ -12,10 +12,9 @@ const app = express()
 // app.use(cors())
 app.use(
   cors({
-    origin: "https://main--melodic-moonbeam-46c7c6.netlify.app/",
+    origin: "https://dalle-clone-smoky.vercel.app",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
-    optionsSuccessStatus: 204,
   })
 )
 app.use(express.json({ limit: "50mb" }))
