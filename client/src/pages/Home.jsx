@@ -25,7 +25,7 @@ const Home = () => {
 
     try {
       const response = await fetch(
-        "https://dalle-arbb.onrender.com/api/v1/post",
+        `${import.meta.env.VITE_API_URL}/api/v1/post`,
         {
           method: "GET",
           headers: {

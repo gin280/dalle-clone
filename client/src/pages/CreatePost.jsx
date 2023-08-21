@@ -28,8 +28,9 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true)
+
         const response = await fetch(
-          "https://dalle-o4cx.onrender.com/api/v1/dalle",
+          `${import.meta.env.VITE_API_URL}/api/v1/dalle`,
           {
             method: "POST",
             headers: {
@@ -57,7 +58,7 @@ const CreatePost = () => {
       setLoading(true)
       try {
         const response = await fetch(
-          "https://dalle-o4cx.onrender.com/api/v1/posts",
+          `${import.meta.env.VITE_API_URL}/api/v1/post`,
           {
             method: "POST",
             headers: {
