@@ -25,7 +25,6 @@ router.route("/").post(async (req, res) => {
       response_format: "b64_json",
     })
     const image = aiResponse?.data?.[0].b64_json
-    console.log(image, "image")
     res.status(200).json({ photo: image })
   } catch (error) {
     console.error(error)
