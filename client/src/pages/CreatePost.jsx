@@ -69,7 +69,7 @@ const CreatePost = () => {
         )
         await response.json()
         alert("Post created successfully")
-        // navigate("/")
+        navigate("/")
       } catch (err) {
         alert(err)
       } finally {
